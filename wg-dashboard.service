@@ -1,0 +1,11 @@
+[Unit]
+After=netword.service
+
+[Service]
+WorkingDirectory=/root/wgdashboard/src
+ExecStart=/usr/bin/python3 /root/wgdashboard/src/dashboard.py
+Restart=always
+
+
+[Install]
+WantedBy=default.target
